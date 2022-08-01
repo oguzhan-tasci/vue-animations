@@ -27,6 +27,14 @@ export default {
       el.style.transform = 'translateY(-60px)'
       el.style.opacity = 0
     }
+
+    // Gsap
+    // That's where we use gsap because we want to animate it. 
+    // In order to do that we'll use 'to' and this is us saying we want to animate 'to' something or other. 
+    // It takes two arguments : First one is the element that we want to animate in and we get access to that ;
+    // Second argument is an object and in here we define the different css properties that we want to animate.
+
+    // done -> This is a function that we can invoke to tell view that we've done with the transition
     const enter = (el, done) => {
       console.log('starting to enter - make transition')
       gsap.to(el, {
