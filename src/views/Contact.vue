@@ -39,6 +39,7 @@ export default {
         y: 0,
         duration: 0.8,
         onComplete: done,
+        // delay : 0.2 -> But with that , it's don't looks like staggered animation. That's why we should use elements' index.
         delay: el.dataset.index * 0.2
       })
     }
